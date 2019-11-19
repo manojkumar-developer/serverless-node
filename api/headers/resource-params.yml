@@ -1,0 +1,7 @@
+ resouceWithParamsApi:
+     handler: api/index.resouceWithParamsApi
+     events:
+          - http:
+               path: /{path}/{id}
+               method: any
+               cors: true       

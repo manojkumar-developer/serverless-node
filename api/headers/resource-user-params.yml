@@ -1,0 +1,27 @@
+resouceUserParamsApi:
+    handler: api/index.resouceUserParamsApi
+    events:
+     - http:
+          path: contributions/user/{id}
+          method: any
+          cors: true          
+     - http:
+          path: grants/user/{id}
+          method: any
+          cors: true
+     - http:
+          path: ledgers/user/{id}
+          method: any
+          cors: true
+     - http:
+          path: my-times/user/{id}
+          method: any
+          cors: true            
+     - http:
+          path: referrals/user/{id}
+          method: any
+          cors: true
+     - http:
+          path: credit-logs/user/{id}
+          method: any
+          cors: true

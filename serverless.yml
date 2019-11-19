@@ -1,0 +1,43 @@
+service: aws-truekarma-api
+
+plugins:
+   - serverless-dynamodb-local   #No need for server
+   - serverless-offline          #No need for server
+
+package:
+  exclude:
+    #- node_modules/**
+    - tmp/**          #need for server
+    - .git/**         #need for server
+    - .dynamodb/**    #need for server
+
+custom:
+  dynamodb:         #No need for server
+    stages:         #No need for server
+      - dev         #No need for server
+    start:          #No need for server
+      port: 8000    #No need for server
+      migrate: true #No need for server
+  newsTable: "news"
+  userTable: "users"
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:*
+      Resource: "*"
+
+functions:
+        - ${file(./api/headers/others.yml)}      
+        - ${file(./api/headers/resource-params.yml)}
+        - ${file(./api/headers/resource-user-params.yml)}
+        - ${file(./api/headers/resource.yml)}
+
+resources:
+        - ${file(./api/sources/news.yml)}
+        - ${file(./api/sources/users.yml)}

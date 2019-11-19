@@ -1,0 +1,7 @@
+ resouceApi:
+    handler: api/index.resouceApi
+    events:
+     - http:
+          path: /{path}
+          method: any
+          cors: true

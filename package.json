@@ -1,0 +1,32 @@
+{
+  "name": "aws-truekarma-api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.331.0",
+    "body-parser": "^1.18.3",
+    "crypto-js": "^3.1.9-1",
+    "dynamodb": "^1.2.0",
+    "express": "^4.16.3",
+    "fibers": "^4.0.1",
+    "fs": "0.0.1-security",
+    "mailgun-js": "^0.22.0",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.26",
+    "node-uuid": "^1.4.8",
+    "path": "^0.12.7",
+    "serverless-dynamodb-local": "^0.2.38",
+    "serverless-http": "^1.6.0",
+    "serverless-offline": "^3.33.0",
+    "stellar-sdk": "^3.0.0",
+    "stripe": "^7.8.0",
+    "uuid": "^3.3.2",
+    "uuid-token-generator": "^1.0.0"
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="icon" href="https://truekarma.org/image/fav/TK-32x32.png" type="image/png" sizes="32x32">
+  <title>TrueKarma</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700" rel="stylesheet">
+  <!-- CSS -->
+  <style>
+    body {
+      font-size: 14px;
+      font-weight: normal;
+      color: #000;
+      font-family: 'Open Sans', sans-serif !important;
+    }    
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- Main Table -->
+    <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+      <tbody>
+        <tr>
+          <td align="center" valign="top">
+            <table width="600" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;background-color:#EEF2F6">
+              <tbody>
+                <!-- Header -->
+                <tr>
+                  <td align="center" valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="color:white;background-color:#022D48;table-layout:fixed;">
+                      <tbody>
+                        <tr>
+                          <td align="center" valign="middle" style="padding-bottom: 15px; padding-top: 15px;">  
+                              <span style=" display: block; width: 240px; height: 40px; 
+                              background-image: url('{{currentDomainName}}image/logo/truekarma-white.png'); background-repeat: no-repeat;" />  
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Body -->
+                <tr>
+                  <td align="center" valign="top">
+                    <table width="85%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+                      <tbody>
+                        <tr>
+                          <td align="left" valign="top" style="padding-top:40px;padding-bottom:20px;">
+                            <h2 style="margin:0;font-family: 'Open Sans', sans-serif !important;">Hey {{firstName}}!</h2>
+                            <p style="width: 400px;margin-top: 20px;font-family: 'Open Sans', sans-serif !important;font-size: 13px;font-weight: 500;line-height: 22px;">Please
+                              verify your account by click the following link to confirm that <b>{{email}}</b> is your email
+                              address.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding-bottom:30px;">
+                            <a href="{{currentDomainName}}verify/{{verificationCode}}" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="color:white;font-size:13px;font-weight: 500;text-transform:uppercase;text-align:center;background-color:#10ADE4;display:inline-block;font-family: 'Open Sans', sans-serif !important;text-decoration:none;border-radius:5px;padding:10px 20px;">
+                              Verify My Email</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">
+                            <p
+                              style="width: 400px;margin-top: 10px;font-family: 'Open Sans', sans-serif !important;font-size: 13px;font-weight: 500;line-height: 22px;">
+                              Team TrueKarma.org</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <hr style="background-color:#ccc;height:1px;margin-bottom:10px;border-style:none;">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Footer -->
+                <tr>
+                  <td align="left" valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+                      <tbody>
+                        <tr>
+                          <td align="center" valign="top">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" colspan="3" style="font-size:12px; font-weight: 500;padding-top:10px;padding-bottom:20px;line-height:1;">
+                                    <p style="margin:0;font-family: 'Open Sans', sans-serif !important;">Copyright ©
+                                      {{copyRightYear}} TrueKarma. <span>All rights reserved.</span> </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
